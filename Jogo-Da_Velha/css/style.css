@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Thasadith:ital@1&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    color: #0a0a0a;
+    background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701497139.jpg');
+    background-size: contain;
+    background-position: center;
+    max-width: 100vw;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.box-btt {
+    margin: 10px;
+    width: 280px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+}
+
+.box-btt > p {
+    font-size: 18px;
+    color: black;
+}
+
+section {
+    padding:10px ;
+    width: 280px;
+    height: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+div {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border: 1px solid #030303;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.text{
+    color: #090909;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding: 0.2rem 0.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 900;
+}
+
+.btt {
+    margin: 5px;
+    font-weight: 100;
+    font-size: 14px;
+    color: #000000;
+    padding: 0px 5px;
+    transition: 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+}
+
+.btt:hover {
+    transition: 1000ms;
+    padding: 1px -20px;
+    transform: translateY(-3px);
+    color: rgb(255, 123, 0);
+}
+
+.testAnimation {
+    border-right: 1px solid rgba(255, 255, 255, 0.75);
+    animation: win 550ms steps(5) infinite normal, typing 1s steps(15) 1s normal both;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 5em;
+    }
+}
+
+@keyframes win {
+    from {
+        background-color: rgba(0, 255, 128, 0.226);
+    }
+
+    to {
+        background-color: transparent;
+    }
+}
